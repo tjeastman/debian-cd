@@ -323,6 +323,9 @@ tasksel tasksel/first multiselect standard
 # popular and include it on CDs.
 popularity-contest popularity-contest/participate boolean false
 
+### GRUB
+d-i grub-installer/only_debian boolean true
+
 ### Finishing up the installation
 # During installations from serial console, the regular virtual consoles
 # (VT1-VT6) are normally disabled in /etc/inittab. Uncomment the next
