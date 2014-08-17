@@ -1,5 +1,5 @@
 debian-cd
 ==========
 ```
-build-simple-cdd --dist wheezy --profiles vagrant
+build-simple-cdd --conf ./simple-cdd.conf  --dist wheezy
 ```
