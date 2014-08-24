@@ -13,6 +13,9 @@ Mount the ISO image to examine its contents:
 sudo mount -o loop images/debian-testing-amd64-CD-1.iso /mnt/
 ```
 
+Note that the `build-simple-cdd` command will automatically update an existing ISO image file to reflect changes
+to `simple-cdd.conf` or the files in `profiles/`.
+
 To test the install CD, first create a VM:
 ```
 VBoxManage createvm --name "Debian Wheezy" --ostype Debian_64 --register
