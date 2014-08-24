@@ -8,6 +8,11 @@ The output file `images/debian-testing-amd64-CD-1.iso` is a bootable
 Debian Wheezy install CD (even though it contains "testing" in the
 name).
 
+Mount the ISO image to examine its contents:
+```
+sudo mount -o loop images/debian-testing-amd64-CD-1.iso /mnt/
+```
+
 To test the install CD, first create a VM:
 ```
 VBoxManage createvm --name "Debian Wheezy" --ostype Debian_64 --register
