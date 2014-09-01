@@ -53,3 +53,8 @@ Setup the VM with ansible:
 ```
 ansible-playbook -i hosts.txt playbooks/setup.yml --extra-vars "hostname=newhost" --sudo
 ```
+
+Install Chrome:
+```
+ansible-playbook -i hosts.txt site.yml --sudo
+```
