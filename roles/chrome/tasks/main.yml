@@ -1,0 +1,7 @@
+---
+- name: Add Google’s Linux package signing key
+  apt_key: url=https://dl-ssl.google.com/linux/linux_signing_key.pub state=present
+- name: Add Google’s Debian package repository
+  copy: src=google-chrome.list dest=/etc/apt/sources.list.d/
+- name: Install Google Chrome
+  apt: name=google-chrome-stable state=present
