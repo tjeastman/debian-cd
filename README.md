@@ -42,19 +42,3 @@ All questions normally asked by the Debian installer have preseeded
 answers.  The installation will proceed automatically after the
 initial install prompt.  When complete, the installer will eject the
 CD and shut down the VM.
-
-Run shell commands on the new host with ansible:
-```
-ansible -i hosts.txt -a whoami all
-ansible -i hosts.txt -a whoami all --sudo
-```
-
-Setup the VM with ansible:
-```
-ansible-playbook -i hosts.txt playbooks/setup.yml --extra-vars "hostname=newhost" --sudo
-```
-
-Install Chrome:
-```
-ansible-playbook -i hosts.txt site.yml --sudo
-```
