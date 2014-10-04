@@ -42,3 +42,8 @@ All questions normally asked by the Debian installer have preseeded
 answers.  The installation will proceed automatically after the
 initial install prompt.  When complete, the installer will eject the
 CD and shut down the VM.
+
+Create a vagrant box:
+```
+vagrant package --base "Debian Wheezy"
+```
