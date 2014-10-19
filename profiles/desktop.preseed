@@ -1,0 +1,5 @@
+### Package selection
+tasksel tasksel/first multiselect standard, desktop
+# If the desktop task is selected, install the kde and xfce desktops
+# instead of the default gnome desktop.
+#tasksel tasksel/desktop multiselect kde, xfce
