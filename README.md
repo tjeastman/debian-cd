@@ -8,6 +8,11 @@ The output file `images/debian-testing-amd64-CD-1.iso` is a bootable
 Debian Wheezy install CD (even though it contains "testing" in the
 name).
 
+The base profile is based on the example preseed configuration file from Debian Wheezy:
+```
+https://www.debian.org/releases/wheezy/example-preseed.txt
+```
+
 Mount the ISO image to examine its contents:
 ```
 sudo mount -o loop images/debian-testing-amd64-CD-1.iso /mnt/
