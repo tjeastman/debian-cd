@@ -1,4 +1,6 @@
+ansible
 git
 emacs
 openssh-server
+sshpass
 zerofree
