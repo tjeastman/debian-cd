@@ -2,5 +2,6 @@ ansible
 git
 emacs
 openssh-server
+python-pip
 sshpass
 zerofree
