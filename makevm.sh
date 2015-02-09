@@ -2,7 +2,7 @@
 VM_NAME="$1"
 VM_BASE_DIR="$HOME/VirtualBox VMs/"
 VM_DISK_NAME="$VM_BASE_DIR/$VM_NAME.vdi"
-VM_ISO_FILE="./images/debian-testing-amd64-CD-1.iso"
+VM_ISO_FILE="./images/debian-8.0-amd64-CD-1.iso"
 VBoxManage createvm --name "$VM_NAME" --ostype Debian_64 --register
 VBoxManage modifyvm "$VM_NAME" --memory 2048
 VBoxManage modifyvm "$VM_NAME" --nic1 bridged
