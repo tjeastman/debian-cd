@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# install the insecure Vagrant SSH key
+mkdir /home/vagrant/.ssh/
+/usr/bin/wget -O- https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub >/home/vagrant/.ssh/authorized_keys
+chown vagrant:vagrant /home/vagrant/.ssh/
+chown vagrant:vagrant /home/vagrant/.ssh/authorized_keys
+chmod 600 /home/vagrant/.ssh/authorized_keys
+
+# enable user for sudo without a password
+echo "vagrant ALL=(ALL) NOPASSWD:ALL" >/etc/sudoers.d/99-vagrant
+chmod 440 /etc/sudoers.d/99-vagrant
+
+echo "UseDNS no" >>/etc/ssh/sshd_config
