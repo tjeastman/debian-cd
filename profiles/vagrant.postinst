@@ -5,6 +5,7 @@ mkdir /home/vagrant/.ssh/
 /usr/bin/wget -O- https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub >/home/vagrant/.ssh/authorized_keys
 chown vagrant:vagrant /home/vagrant/.ssh/
 chown vagrant:vagrant /home/vagrant/.ssh/authorized_keys
+chmod 700 /home/vagrant/.ssh/
 chmod 600 /home/vagrant/.ssh/authorized_keys
 
 # enable user for sudo without a password
