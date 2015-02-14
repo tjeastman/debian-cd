@@ -12,4 +12,9 @@ chmod 600 /home/vagrant/.ssh/authorized_keys
 echo "vagrant ALL=(ALL) NOPASSWD:ALL" >/etc/sudoers.d/99-vagrant
 chmod 440 /etc/sudoers.d/99-vagrant
 
-echo "UseDNS no" >>/etc/ssh/sshd_config
+# disable reverse DNS lookups in sshd
+cat >>/etc/ssh/sshd_config <<EOF
+
+# Disable reverse DNS lookup on connecting SSH clients.
+UseDNS no
+EOF
