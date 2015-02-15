@@ -10,7 +10,7 @@ VBoxManage modifyvm "$VM_NAME" --memory 512
 #VBoxManage modifyvm "$VM_NAME" --nic1 bridged
 #VBoxManage modifyvm "$VM_NAME" --bridgeadapter1 eth1
 VBoxManage modifyvm "$VM_NAME" --vram 12 --accelerate3d on
-VBoxManage createhd --filename "$VM_DISK_NAME" --size 20480
+VBoxManage createhd --filename "$VM_DISK_NAME" --size 40960
 VBoxManage storagectl "$VM_NAME" --name SATA --add sata --portcount 1 --bootable on
 VBoxManage storageattach "$VM_NAME" --storagectl SATA --type hdd --port 0 --medium "$VM_DISK_NAME"
 VBoxManage storagectl "$VM_NAME" --name IDE --add ide --bootable on
