@@ -1,2 +1,5 @@
 sudo
+linux-headers-amd64
+virtualbox-dkms
 virtualbox-guest-dkms
+virtualbox-guest-utils
