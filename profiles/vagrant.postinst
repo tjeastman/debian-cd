@@ -25,3 +25,7 @@ apt-get clean
 # zero out free disk space to improve compression of the disk image file
 dd if=/dev/zero of=/zeros.bin bs=1M
 rm -f /zeros.bin
+
+# eliminate GRUB boot delay
+sed -i "s/GRUB_TIMEOUT=[0-9]/GRUB_TIMEOUT=0/" /etc/default/grub
+update-grub
