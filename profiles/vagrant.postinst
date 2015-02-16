@@ -21,3 +21,7 @@ EOF
 
 # remove local copy of retrieved package files
 apt-get clean
+
+# zero out free disk space to improve compression of the disk image file
+dd if=/dev/zero of=/zeros.bin bs=1M
+rm -f /zeros.bin
