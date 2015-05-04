@@ -1,6 +1,10 @@
 debian-CD
 ==========
-Run the following command to build the ISO image for the CD:
+First install the simple-cdd package:
+```
+sudo apt-get install simple-cdd
+```
+Then run the following command to build the ISO image for the CD:
 ```
 build-simple-cdd --profiles base,vm --auto-profiles base,vm --dist wheezy
 ```
